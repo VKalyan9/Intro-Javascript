@@ -1,5 +1,4 @@
 
-// let is a keyword used to declare variables in JavaScript. It allows you to create a variable that can be reassigned later in the code. Variables declared with let have block scope, meaning they are only accessible within the block of code where they are defined. This helps to prevent accidental changes to variables and promotes better code organization.
 console.log("Hello, World!");
 // 1 Number
 let a = 20 
@@ -21,7 +20,8 @@ console.log(x);
 let y = null; 
 console.log(y);
 
-// const is a constant variable that cannot be reassigned after its initial assignment. It is used to declare variables that should not change throughout the program. Once a value is assigned to a const variable, it cannot be modified or reassigned. This helps to ensure that certain values remain constant and prevents accidental changes to important data in the code.
+
+//const 
 const pi = 3.14;
 console.log(pi);
 
@@ -35,3 +35,57 @@ console.error("This is an error message.");
 
 
 
+// operators
+let num1 = 10;
+let num2 = 5;
+let sum = num1 + num2;
+console.log("Sum:", sum);
+
+let difference = num1 - num2;
+console.log("Difference:", difference);
+
+let product = num1 * num2;
+console.log("Product:", product);
+
+let quotient = num1 / num2;
+console.log("Quotient:", quotient);
+
+let remainder = num1 % num2;
+console.log("Remainder:", remainder);
+
+
+// conditional statements
+let age = 18;
+if (age >= 18) {
+    console.log("You are an adult.");
+}
+
+let score = 85;
+if (score >= 90) {
+    console.log("Grade: A");
+} else if (score >= 80) {
+    console.log("Grade: B");
+}
+
+//voting eligibility
+let voterAge = 20;
+if (voterAge >= 18) {   
+    console.log("You are eligible to vote.");
+} else {
+    console.log("You are not eligible to vote.");
+}   
+
+let days = 3
+switch (days) {
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break;
+        default:
+        console.log("Invalid day");
+}
