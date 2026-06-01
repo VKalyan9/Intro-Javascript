@@ -60,12 +60,21 @@ if (age >= 18) {
     console.log("You are an adult.");
 }
 
+// marks
 let score = 85;
 if (score >= 90) {
     console.log("Grade: A");
 } else if (score >= 80) {
     console.log("Grade: B");
+} else if (score >= 70) {
+    console.log("Grade: C");
+}else if (score >= 60) {
+    console.log("Grade: D");
+}else{
+    console.log("Grade: F");
 }
+
+
 
 //voting eligibility
 let voterAge = 20;
@@ -89,3 +98,15 @@ switch (days) {
         default:
         console.log("Invalid day");
 }
+
+
+//Atm machine
+let amount = 5000;
+let widthdrawAmount = 2000;
+if (widthdrawAmount <= amount) {
+    console.log("Transaction successful. Please collect your cash.");
+} else {
+    console.log("Insufficient funds. Transaction failed.");
+}
+
+
