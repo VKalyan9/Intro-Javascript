@@ -1,5 +1,5 @@
 
-console.log("Hello, World!");
+/*console.log("Hello, World!");
 // 1 Number
 let a = 20 
 console.log(a);
@@ -107,6 +107,43 @@ if (widthdrawAmount <= amount) {
     console.log("Transaction successful. Please collect your cash.");
 } else {
     console.log("Insufficient funds. Transaction failed.");
+}*/
+
+
+
+/*// Loops 
+for(let i = 1; i <= 10; i++){
+    console.log(i);
 }
 
+//decending order
+for(let i = 10; i >= 1; i--) {
+    console.log(i)
+}
+
+// while loop 
+let count = 1;
+while(count <= 5) {
+    console.log(count);
+    count++;
+}
+
+// do while loop
+let num = 1;
+do {
+    console.log(num);
+    num++;
+} while (num <= 5); */
+
+// table of 4 
+let number = 4;
+for (let i = 1; i <= 10; i++) {
+    console.log(number * i);
+}
+
+// table of 4  in literactre 
+let num = 5;
+for(let i = 1; i <= 10; i++) {
+    console.log(`${num} x ${i} = ${num * i}`);
+}
 
