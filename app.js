@@ -1,5 +1,5 @@
 
-/*console.log("Hello, World!");
+console.log("Hello, World!");
 // 1 Number
 let a = 20 
 console.log(a);
@@ -133,7 +133,7 @@ let num = 1;
 do {
     console.log(num);
     num++;
-} while (num <= 5); */
+} while (num <= 5); 
 
 // table of 4 
 let number = 4;
@@ -146,4 +146,51 @@ let num = 5;
 for(let i = 1; i <= 10; i++) {
     console.log(`${num} x ${i} = ${num * i}`);
 }
+
+//functions 
+//function 
+function add(a, b) {
+    return a+b;
+}
+console.log(add(5,10)); 
+
+function greet(name) {
+    console.log(`Hello, ${name}! Welcome to JavaScript programming.`);
+}
+greet("Alice");
+
+// function to calculate the area of a circle
+function calculateArea(radius) {
+    const pi = 3.14;
+    return pi * radius * radius;
+}
+console.log(calculateArea(5)); 
+
+// function to check if a number is even or odd
+function checkEvenOdd(num) {
+    if (num % 2 === 0) {    
+        console.log(`${num} is an even number.`);
+    } else {
+        console.log(`${num} is an odd number.`);
+    }   
+}
+checkEvenOdd(10);
+checkEvenOdd(7); 
+
+// function to find prime numbers
+function isPrime(num) {
+    if (num <= 1) { 
+        return false;
+    }
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            return false;
+        }   
+
+    }
+    return true;
+}   
+console.log(isPrime(11));
+console.log(isPrime(15)); 
+
 
