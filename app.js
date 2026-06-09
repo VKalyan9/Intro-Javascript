@@ -1,5 +1,5 @@
 
-console.log("Hello, World!");
+/*console.log("Hello, World!");
 // 1 Number
 let a = 20 
 console.log(a);
@@ -107,11 +107,11 @@ if (widthdrawAmount <= amount) {
     console.log("Transaction successful. Please collect your cash.");
 } else {
     console.log("Insufficient funds. Transaction failed.");
-}*/
+}
 
 
 
-/*// Loops 
+// Loops 
 for(let i = 1; i <= 10; i++){
     console.log(i);
 }
@@ -147,7 +147,7 @@ for(let i = 1; i <= 10; i++) {
     console.log(`${num} x ${i} = ${num * i}`);
 }
 
-//functions 
+
 //function 
 function add(a, b) {
     return a+b;
@@ -191,6 +191,28 @@ function isPrime(num) {
     return true;
 }   
 console.log(isPrime(11));
-console.log(isPrime(15)); 
+console.log(isPrime(15));*/
+
+//Arrays
+let fruits = ["Apple", "Banana", "Orange"];
+console.log(fruits[0]);
+console.log(fruits[1]);
+console.log(fruits[2]);  
+console.log(fruits.length);
 
 
+fruits.push("grapes")
+console.log(fruits);
+
+fruits.pop();
+console.log(fruits);
+
+fruits.unshift("kiwi");
+console.log(fruits);
+
+fruits.shift();
+console.log(fruits);
+
+//slice
+let tastedFruits = fruits.slice(0, 2);
+console.log(tastedFruits);
