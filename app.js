@@ -191,28 +191,102 @@ function isPrime(num) {
     return true;
 }   
 console.log(isPrime(11));
-console.log(isPrime(15));*/
+console.log(isPrime(15));
 
 //Arrays
 let fruits = ["Apple", "Banana", "Orange"];
 console.log(fruits[0]);
 console.log(fruits[1]);
-console.log(fruits[2]);  
-console.log(fruits.length);
+console.log(fruits[2]); 
 
 
-fruits.push("grapes")
-console.log(fruits);
+// objects
+let person = {
+    name: "John Doe",
+    age: 30,  
+    city: "New York"
+};
+console.log(person.name);
+console.log(person.age);
+console.log(person.city);
 
-fruits.pop();
-console.log(fruits);
+// dot notation
+person.name = "Jane Smith";
+console.log(person.name);   
 
-fruits.unshift("kiwi");
-console.log(fruits);
+// bracket notation 
+person["age"] = 25;
+console.log(person.age);    
 
-fruits.shift();
-console.log(fruits);
+// adding new property
+person.country = "USA";
+console.log(person.country);
 
-//slice
-let tastedFruits = fruits.slice(0, 2);
-console.log(tastedFruits);
+// deleting a property
+delete person.city;
+console.log(person.city); // undefined  
+
+// iterating over object properties
+for (let key in person) {
+    console.log(`${key}: ${person[key]}`);
+} */
+
+// nested objects
+let student = {
+    name: "Alice", 
+    age: 20,
+    address: {
+        street: "123 Main St"   
+    },
+    hobbies: ["Reading", "Traveling", "Cooking"]
+};  
+
+console.log(student.name);
+console.log(student.age);
+console.log(student.address.street);
+console.log(student.hobbies[0]);
+console.log(student.hobbies[1]);
+console.log(student.hobbies[2]); 
+
+// destructuring assignment
+let { name, age } = student;
+console.log(name);
+console.log(age);
+
+// destructuring nested objects
+let { address: { street } } = student;
+console.log(street);      
+
+// destructuring arrays
+let [hobby1, hobby2, hobby3] = student.hobbies;
+console.log(hobby1);
+console.log(hobby2);
+console.log(hobby3);    
+
+// spread operator
+let newStudent = { ...student, grade: "A" };
+console.log(newStudent); 
+let newHobbies = [...student.hobbies, "Painting"];
+console.log(newHobbies);
+
+// rest operator
+function sum(...numbers) {
+    return numbers.reduce((total, num) => total + num, 0);
+}
+console.log(sum(1, 2, 3, 4, 5));
+
+// arrow functions
+const multiply = (a, b) => a * b;
+console.log(multiply(5, 10)); 
+
+// regex
+let pattern = /hello/i;
+let str = "Hello, World!";
+console.log(pattern.test(str)); // true
+
+let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+let email = "kalyan@gmail.com";
+console.log(emailPattern.test(email)); // true
+
+
+
